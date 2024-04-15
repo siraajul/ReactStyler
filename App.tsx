@@ -5,7 +5,10 @@ import FlatCards from './components/FlatCards';
 const App = () => {
   return (
     <SafeAreaView>
-      <ScrollView>
+      <ScrollView horizontal={true}>
+        <FlatCards />
+      </ScrollView>
+      <ScrollView horizontal={true}>
         <FlatCards />
       </ScrollView>
     </SafeAreaView>
