@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   headingText: {
     fontSize: 24,
     fontWeight: 'bold',
-    paddingHorizontal: 10,
+    paddingHorizontal: 8,
   },
   container: {
     flex: 1,
