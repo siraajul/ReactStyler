@@ -16,7 +16,7 @@ export default function FancyCards() {
           <Text style={styles.cardTitle}> React Native</Text>
           <Text style={styles.cardLabel}> Developed By Facebook</Text>
           <Text style={styles.cardDesc}> Based On JavaScript.</Text>
-          <Text style={styles.cardFooter}> Based On JavaScript.</Text>
+          <Text style={styles.cardFooter}> Sirajul</Text>
         </View>
       </View>
     </View>
@@ -24,15 +24,61 @@ export default function FancyCards() {
 }
 
 const styles = StyleSheet.create({
-  headingText: {},
-  card: {},
-  cardElevated: {},
-  cardImage: {
-    height: 300,
+  headingText: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    paddingHorizontal: 8,
+    color: '#FFFFFF',
   },
-  cardBody: {},
-  cardTitle: {},
-  cardLabel: {},
-  cardDesc: {},
-  cardFooter: {},
+  card: {
+    height: 'auto',
+    width: '90%',
+    borderRadius: 6,
+    marginVertical: '2%',
+    marginHorizontal: '5%',
+  },
+  cardElevated: {
+    backgroundColor: '#FFFFFF',
+    elevation: 3,
+    shadowOffset: {
+      width: 1,
+      height: 1,
+    },
+  },
+  cardImage: {
+    height: 180,
+    marginBottom: 8,
+    borderTopLeftRadius: 6,
+    borderTopRightRadius: 6,
+  },
+  cardBody: {
+    flex: 1,
+    flexGrow: 1,
+    paddingHorizontal: 12,
+  },
+  cardTitle: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginBottom: 4,
+    textAlign: 'center',
+  },
+  cardLabel: {
+    fontSize: 12,
+    fontWeight: 'bold',
+    marginBottom: 6,
+    textAlign: 'center',
+  },
+  cardDesc: {
+    fontSize: 10,
+    marginTop: 6,
+    marginBottom: 12,
+    flexShrink: 1,
+    textAlign: 'center',
+  },
+  cardFooter: {
+    fontSize: 6,
+    fontWeight: 'bold',
+    marginBottom: 4,
+    textAlign: 'center',
+  },
 });
