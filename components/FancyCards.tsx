@@ -4,7 +4,7 @@ import React from 'react';
 export default function FancyCards() {
   return (
     <View>
-      <Text style={styles.headingText}>Trending Places</Text>
+      <Text style={styles.headingText}>Trending Technology</Text>
       <View style={[styles.card, styles.cardElevated]}>
         <Image
           source={{
@@ -12,6 +12,12 @@ export default function FancyCards() {
           }}
           style={styles.cardImage}
         />
+        <View style={styles.cardBody}>
+          <Text style={styles.cardTitle}> React Native</Text>
+          <Text style={styles.cardLabel}> Developed By Facebook</Text>
+          <Text style={styles.cardDesc}> Based On JavaScript.</Text>
+          <Text style={styles.cardFooter}> Based On JavaScript.</Text>
+        </View>
       </View>
     </View>
   );
@@ -23,6 +29,10 @@ const styles = StyleSheet.create({
   cardElevated: {},
   cardImage: {
     height: 300,
-    width: 300,
   },
+  cardBody: {},
+  cardTitle: {},
+  cardLabel: {},
+  cardDesc: {},
+  cardFooter: {},
 });
